@@ -19,5 +19,5 @@ Route::get('/', function () {
 });
 
 Route::group(['prefix' => ''], function () {
-    Route::get('/cadastro', [ClientController::class, 'index']);
+    Route::get('/register', [ClientController::class, 'index']);
 });

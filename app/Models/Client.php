@@ -14,7 +14,7 @@ class Client extends Model
         'cpf',
         'name',
         'birth_date',
-        'sexo',
+        'sex',
         'address',
         'state_id',
         'city_id',
