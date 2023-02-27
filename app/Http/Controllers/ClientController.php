@@ -28,6 +28,15 @@ class ClientController extends Controller
         return view('register', compact('clients'));
     }
 
+    public function list()
+    {
+        $clients = $this->client
+            ->all()
+            ->load('city')
+            ->load('state');
+        return view('customer-list', compact('clients'));
+    }
+
     /**
      * Show the form for creating a new resource.
      */

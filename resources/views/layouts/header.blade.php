@@ -1,7 +1,7 @@
 @section('header')
     <header id="topnav" class="defaultscroll sticky">
         <div class="container">
-            <a class="logo" href="#">
+            <a class="logo" href="/">
                 <img src="assets/images/logo-Upd8.png" class="logo-light-mode" alt="">
                 <img src="assets/images/logo-Upd8.png" class="logo-dark-mode" alt="">
             </a>
@@ -18,8 +18,8 @@
             </div>
             <div id="navigation">
                 <ul class="navigation-menu">
-                    <li><a href="#" class="sub-menu-item">Listagem</a></li>
-                    <li><a href="#" class="sub-menu-item">Cadastro</a></li>
+                    <li><a href="/customer-list" class="sub-menu-item">Listagem</a></li>
+                    <li><a href="/" class="sub-menu-item">Cadastro</a></li>
                 </ul>
             </div>
         </div>

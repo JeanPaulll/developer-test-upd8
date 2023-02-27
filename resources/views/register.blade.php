@@ -5,7 +5,6 @@
 <body>
 @include('layouts/header')
 @yield('header')
-
 <section class="bg-half-170 d-table w-100" id="home">
     <div class="container">
         <div class="row align-items-center">
@@ -15,7 +14,6 @@
                         <div class="p-4 border-bottom">
                             <h4 class="title mb-0"> Cadastro Cliente </h4>
                         </div>
-
                         <div class="p-4">
                             <form>
                                 <div class="row">
@@ -34,22 +32,21 @@
                                                        placeholder="CPF :">
                                             </div>
                                         </div>
-                                    </div><!--end col-->
+                                    </div>
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                             <label class="form-label">Nome <span class="text-danger">*</span></label>
                                             <input name="email" id="name" type="text" class="form-control"
                                                    placeholder="Nome :">
                                         </div>
-                                    </div><!--end col-->
-
+                                    </div>
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                             <label class="form-label">Data Nascimento <span class="text-danger">*</span></label>
                                             <input name="data" id="data" type="date" class="form-control"
                                                    placeholder="Data Nascimento :">
                                         </div>
-                                    </div><!--end col-->
+                                    </div>
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                             <label class="form-label">Endereço <span
@@ -57,18 +54,16 @@
                                             <input name="address" id="address" type="text" class="form-control"
                                                    placeholder="Endereço:">
                                         </div>
-                                    </div><!--end col-->
-
+                                    </div>
                                     <div class="col-md-6">
                                         <div class="mb-3">
-                                            <label class="form-label">state <span class="text-danger">*</span></label>
+                                            <label class="form-label">Estado <span class="text-danger">*</span></label>
                                             <select id="inputstate" class="form-control">
                                                 <option selected>Escolher...</option>
                                                 <option>...</option>
                                             </select>
                                         </div>
-                                    </div><!--end col-->
-
+                                    </div>
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                             <label class="form-label">Cidade <span class="text-danger">*</span></label>
@@ -77,17 +72,16 @@
                                                 <option>...</option>
                                             </select>
                                         </div>
-                                    </div><!--end col-->
-
-                                </div><!--end row-->
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <input type="submit" id="submit" name="salvar" class="btn btn-primary"
                                                value="Salvar">
                                         <input type="submit" id="limpar" name="limpar" class="btn" value="Limpar">
-                                    </div><!--end col-->
-                                </div><!--end row-->
-                            </form><!--end form-->
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -95,9 +89,8 @@
         </div>
     </div>
 </section>
-
-@include('layouts/table')
-@yield('table')
+@include('layouts/footer')
+@yield('footer')
 @include('layouts/scripts')
 @yield('scripts')
 </body>

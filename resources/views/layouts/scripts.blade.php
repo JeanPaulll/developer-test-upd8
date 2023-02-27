@@ -11,7 +11,7 @@
     <script src="assets/js/app.js"></script>
     <script type="application/javascript">
         $(document).ready(function () {
-            $('#example').DataTable({
+            $('#client').DataTable({
                 language: {
                     url:"https://cdn.datatables.net/plug-ins/1.11.3/i18n/pt_br.json"
                 }

@@ -14,10 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
 Route::group(['prefix' => ''], function () {
-    Route::get('/register', [ClientController::class, 'index']);
+    Route::get('/', [ClientController::class, 'index']);
+    Route::get('/customer-list', [ClientController::class, 'list']);
 });

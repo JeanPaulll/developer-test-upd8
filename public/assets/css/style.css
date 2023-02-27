@@ -94,17 +94,17 @@ h6, .h6 {
 }
 
 .bg-primary {
-  background-color: #2f55d4 !important;
+  background-color: #019edb !important;
 }
 
 .bg-soft-primary {
   background-color: rgba(47, 85, 212, 0.1) !important;
   border: 1px solid rgba(47, 85, 212, 0.1) !important;
-  color: #2f55d4 !important;
+  color: #019edb !important;
 }
 
 .text-primary {
-  color: #2f55d4 !important;
+  color: #019edb !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -256,17 +256,17 @@ a.text-light:hover, a.text-light:focus {
 }
 
 .bg-blue {
-  background-color: #2f55d4 !important;
+  background-color: #019edb !important;
 }
 
 .bg-soft-blue {
   background-color: rgba(47, 85, 212, 0.1) !important;
   border: 1px solid rgba(47, 85, 212, 0.1) !important;
-  color: #2f55d4 !important;
+  color: #019edb !important;
 }
 
 .text-blue {
-  color: #2f55d4 !important;
+  color: #019edb !important;
 }
 
 a.text-blue:hover, a.text-blue:focus {
@@ -274,7 +274,7 @@ a.text-blue:hover, a.text-blue:focus {
 }
 
 .bg-footer {
-  background-color: #202942 !important;
+  background-color: #8492a6 !important;
 }
 
 .bg-soft-footer {
@@ -345,7 +345,7 @@ video:focus {
 }
 
 .border-primary {
-  border-color: #2f55d4 !important;
+  border-color: #019edb !important;
 }
 
 .border-secondary {
@@ -381,7 +381,7 @@ video:focus {
 }
 
 .border-blue {
-  border-color: #2f55d4 !important;
+  border-color: #019edb !important;
 }
 
 .border-footer {
@@ -522,7 +522,7 @@ video:focus {
 }
 
 .component-wrapper.sticky-bar li a:hover, .component-wrapper.sticky-bar li a:focus {
-  color: #2f55d4 !important;
+  color: #019edb !important;
 }
 
 .btn-primary {
@@ -916,7 +916,7 @@ video:focus {
 }
 
 .btn-footer {
-  background-color: #202942 !important;
+  background-color: #8492a6 !important;
   border: 1px solid #202942 !important;
   color: #ffffff !important;
   box-shadow: 0 3px 5px 0 rgba(32, 41, 66, 0.1);
@@ -936,7 +936,7 @@ video:focus {
 }
 
 .btn-soft-footer:hover, .btn-soft-footer:focus, .btn-soft-footer:active, .btn-soft-footer.active, .btn-soft-footer.focus {
-  background-color: #202942 !important;
+  background-color: #8492a6 !important;
   border-color: #202942 !important;
   color: #ffffff !important;
 }
@@ -4055,7 +4055,7 @@ p {
 }
 
 .ribbon.ribbon-footer span {
-  background-color: #202942 !important;
+  background-color: #8492a6 !important;
 }
 
 .ribbon.ribbon-footer span:before {
