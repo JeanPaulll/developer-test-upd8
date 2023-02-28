@@ -17,7 +17,12 @@
                                 cidade e sexo.
                             </p>
                             <section class="p-4">
-                                <table id="client" class="table table-striped">
+                                @if ($message = Session::get('success'))
+                                    <div class="alert alert-success">
+                                        {{ $message }}
+                                    </div>
+                                @endif
+                                <table id="client" class="table table-striped mt-4">
                                     <thead>
                                     <tr>
                                         <th>Cliente</th>
@@ -43,9 +48,9 @@
                                                    data-bs-placement="top" title="Editar o item: {{ $client->name }}"
                                                    alt="">
                                                     Editar </a>
-                                                <a href="#" class="btn btn-danger mb-2" data-bs-toggle="tooltip"
+                                                <a onclick="goDestroy('/destroy/{{ $client->id }}')" class="btn btn-danger mb-2" data-bs-toggle="tooltip"
                                                    data-bs-placement="top" title="Excluir o item: {{ $client->name }}"
-                                                   alt="">
+                                                   alt="Destroy Client">
                                                     Excluir </a>
                                             </td>
                                         </tr>

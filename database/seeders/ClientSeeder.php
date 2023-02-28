@@ -26,7 +26,7 @@ class ClientSeeder extends Seeder
             if (isset($state[0]['id']) && isset($cidade[0]['id'])) {
                 $client = [
                     'cpf' => '03941532458',
-                    'name' => 'Usuário de Teste 2',
+                    'name' => 'Usuário de Teste',
                     'birth_date' => $now,
                     'sex' => 'm',
                     'address' => 'Quadra 20 Lote 05 - Ocidental Parque',

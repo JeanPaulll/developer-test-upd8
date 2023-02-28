@@ -19,6 +19,9 @@ Route::get('/welcome', function () {
 });
 
 Route::group(['prefix' => ''], function () {
-    Route::get('/', [ClientController::class, 'index']);
-    Route::get('/customer-list', [ClientController::class, 'list']);
+    Route::get('/', [ClientController::class, 'create']);
+    Route::post('/', [ClientController::class, 'store']);
+    Route::get('/customer-list', [ClientController::class, 'index']);
+    Route::get('/cities/{state_id}', [ClientController::class, 'indexCities']);
+    Route::get('/destroy/{client_id}', [ClientController::class, 'destroy']);
 });

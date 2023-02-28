@@ -5636,4 +5636,8 @@ ul .t-ltr-dark {
     display: none;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+.alert-danger-clients{
+    padding: 15px 0 0 0;
+}
+

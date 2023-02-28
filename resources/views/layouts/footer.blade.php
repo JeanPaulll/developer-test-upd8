@@ -22,7 +22,7 @@
                                     <div class="row">
                                         <div class="col-lg-12 mt-5 p-5">
                                             <div class="d-grid">
-                                                <a href="{{env('GITHUB_URL')}}" class="btn btn-primary">GitHub @ {{env('GITHUB_NAME')}}</a>
+                                                <a href="{{env('GITHUB_URL')}}" target="_blank" class="btn btn-primary">GitHub @ {{env('GITHUB_NAME')}}</a>
                                             </div>
                                         </div>
                                     </div>

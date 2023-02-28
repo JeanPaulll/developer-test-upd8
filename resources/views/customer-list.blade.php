@@ -11,5 +11,15 @@
 @yield('footer')
 @include('layouts/scripts')
 @yield('scripts')
+<script type="application/javascript">
+    function goDestroy(data) {
+        let name = confirm("Você deseja deletar este item?")
+        if (name === true) {
+            location.href = data
+        } else {
+            return false
+        }
+    }
+</script>
 </body>
 </html>
