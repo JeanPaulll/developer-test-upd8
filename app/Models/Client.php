@@ -38,6 +38,6 @@ class Client extends Model
 
     public function city(): BelongsTo
     {
-        return $this->belongsTo(City::class, 'city_id'); // Omit the second parameter if you're following convention
+        return $this->belongsTo(City::class, 'city_id');
     }
 }

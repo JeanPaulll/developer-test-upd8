@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 use App\Models\State;
 use Exception;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -55,10 +54,10 @@ class StateSeeder extends Seeder
                     'uf' => $states[$i]['uf']
                 ];
                 if (State::where('uf', $states[$i]['uf'])->count()) {
-                    echo "Já existe o state de {$states[$i]['name']} cadastrado!\n";
+                    echo "Já existe o estado de {$states[$i]['name']} cadastrado!\n";
                 } else {
                     if (State::create($state)) {
-                        echo "state (" . $i . "-" . $states[$i]['name'] . ") cadastrado com sucesso!\n";
+                        echo "Estado (" . $i . "-" . $states[$i]['name'] . ") cadastrado com sucesso!\n";
                     }
                 }
             }

@@ -8,17 +8,19 @@
 
 .login-page {
     font-size: 15px;
+
     .forgot-pass {
         z-index: 99;
         position: relative;
         font-size: 13px;
     }
-} 
+}
 
 .cover-user {
-    .container-fluid{
+    .container-fluid {
         max-width: 100%;
-        .padding-less{
+
+        .padding-less {
 
             @media (max-width: 768px) {
                 position: relative !important;
@@ -32,14 +34,15 @@
                 height: 100%;
             }
         }
-    }    
+    }
+
     .cover-user-img {
         height: 100vh;
 
         @media (min-width: 1025px) {
             padding: 0px 20%;
         }
-        
+
         @media (max-width: 768px) {
             align-items: start !important;
             height: auto !important;
@@ -47,11 +50,11 @@
         }
     }
 
-    
+
     @media (max-width: 768px) {
         .cover-user-content {
             text-align: left !important;
-        }    
+        }
         .cover-my-30 {
             margin: 30px 0;
         }
@@ -69,6 +72,7 @@
 .bg-profile {
     padding: 100px 0;
     @include home-common();
+
     .public-profile {
         top: 175px;
     }
@@ -84,7 +88,7 @@
             box-shadow: $shadow;
         }
     }
-    
+
     .chat-list,
     .chat-type {
         .on-off {
@@ -94,35 +98,44 @@
             font-size: 12px !important;
         }
     }
-    
+
     &.chat-person {
         .on-off {
             font-size: 10px;
         }
+
         .chat-msg {
             margin-left: 8px;
+
             .msg {
                 border: 1px solid $gray-200;
             }
+
             .msg-time {
                 font-size: 12px !important;
             }
         }
+
         .chat-right {
             justify-content: flex-end;
             text-align: right;
+
             .chat-user-image {
                 order: 2;
+
                 .on-off {
                     right: -1px;
                 }
             }
+
             .chat-msg {
                 margin-right: 8px;
                 margin-left: 0;
+
                 .msg {
                     display: inline-block;
                 }
+
                 .msg-time {
                     display: block;
                 }
@@ -135,6 +148,7 @@
 .simplebar-track {
     &.simplebar-vertical {
         width: 8px !important;
+
         .simplebar-scrollbar {
             &:before {
                 width: 4px !important;

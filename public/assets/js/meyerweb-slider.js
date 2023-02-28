@@ -113,7 +113,7 @@ function heroSlider() {
     }
 
     const setCurrent = function () {
-        slider.current.innerText = leadingZero `${slider.activeIndex + 1}`;
+        slider.current.innerText = leadingZero`${slider.activeIndex + 1}`;
     }
 
     const changeSlide = function (direction) {
@@ -130,7 +130,7 @@ function heroSlider() {
         //reset classes
         utils().removeClasses(slider.items, ['prev', 'active']);
 
-        //set prev  
+        //set prev
         const prevItems = [...slider.items]
             .filter(item => {
                 let prevIndex;

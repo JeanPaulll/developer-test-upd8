@@ -1,4 +1,3 @@
-
 //Chart 1
 var options = {
     series: [{
@@ -49,7 +48,6 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#chart-1"), options);
 chart.render();
-
 
 
 //chart 2

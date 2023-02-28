@@ -8,9 +8,11 @@
 
 .client-testi {
     cursor: e-resize;
+
     .client-image {
         margin-right: 16px;
     }
+
     .content {
         &:before {
             content: "";
@@ -31,6 +33,7 @@
 .tns-nav {
     text-align: center;
     margin-top: 10px;
+
     button {
         border-radius: 3px;
         background: rgba($primary, 0.5) !important;
@@ -38,6 +41,7 @@
         border: none;
         margin: 0 5px;
         padding: 5px;
+
         &.tns-nav-active {
             background: $primary !important;
             transform: rotate(45deg);
@@ -62,14 +66,17 @@
         transition: all 0.5s ease;
         z-index: 1;
         box-shadow: $shadow-lg;
+
         &:hover {
             background: $primary;
             color: $white;
         }
     }
+
     button[data-controls="prev"] {
         left: 0;
     }
+
     button[data-controls="next"] {
         right: 0;
     }
@@ -86,6 +93,7 @@
     position: relative;
     width: 100%;
     margin: 0 auto;
+
     &:before {
         content: "";
         position: absolute;
@@ -95,8 +103,10 @@
         height: 2px;
         background: $primary;
     }
+
     .item-box {
         margin: 70px 15px 20px;
+
         &:before,
         &:after {
             content: "";
@@ -104,12 +114,14 @@
             left: 50%;
             background: $primary;
         }
+
         &:before {
             width: 2px;
             height: 46px;
             top: -46px;
             transform: translateX(-50%);
         }
+
         &:after {
             width: 13px;
             height: 13px;

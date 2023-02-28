@@ -40,9 +40,9 @@ function validateForm() {
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhttp.send("name=" + name + "&email=" + email + "&subject=" + subject + "&comments=" + comments);
     return false;
-  }
+}
 
-  function fadeIn() {
+function fadeIn() {
     var fade = document.getElementById("error-msg");
     var opacity = 0;
     var intervalID = setInterval(function () {

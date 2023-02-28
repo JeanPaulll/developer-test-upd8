@@ -10,16 +10,6 @@ use Illuminate\Support\Facades\DB;
 class CitiesSeeder extends Seeder
 {
 
-    public function readCSV($csvFile, $array)
-    {
-        $file_handle = fopen($csvFile, 'r');
-        while (!feof($file_handle)) {
-            $line_of_text[] = fgetcsv($file_handle, 0, $array['delimiter']);
-        }
-        fclose($file_handle);
-        return $line_of_text;
-    }
-
     /**
      * Run the database seeds.
      */
@@ -52,5 +42,15 @@ class CitiesSeeder extends Seeder
             echo 'Exceção capturada: ', $e->getMessage(), "\n\n";
             echo "Não foi possível adicionar | Codigo: ", $e->getCode(), "\n";
         }
+    }
+
+    public function readCSV($csvFile, $array)
+    {
+        $file_handle = fopen($csvFile, 'r');
+        while (!feof($file_handle)) {
+            $line_of_text[] = fgetcsv($file_handle, 0, $array['delimiter']);
+        }
+        fclose($file_handle);
+        return $line_of_text;
     }
 }

@@ -14,7 +14,8 @@ $value in $colors {
         border: 1px solid #{$value} !important;
         color: $dark !important;
         box-shadow: 0 3px 5px 0 rgba($value, 0.3);
-        &:hover, &:focus, &:active, &.active, &.focus{
+
+        &:hover, &:focus, &:active, &.active, &.focus {
             background-color: darken($value, 10%) !important;
             border-color: darken($value, 10%) !important;
             color: $dark !important;
@@ -26,7 +27,8 @@ $value in $colors {
         border: 1px solid rgba($value, 0.2) !important;
         color: #{$value} !important;
         box-shadow: 0 3px 5px 0 rgba($value, 0.3);
-        &:hover, &:focus, &:active, &.active, &.focus{
+
+        &:hover, &:focus, &:active, &.active, &.focus {
             background-color: #{$value} !important;
             border-color: #{$value} !important;
             color: $dark !important;
@@ -36,8 +38,9 @@ $value in $colors {
     .btn-outline-#{$name} {
         border: 1px solid #{$value};
         color: #{$value};
-        background-color: transparent;    
-        &:hover, &:focus, &:active, &.active, &.focus, &:not(:disabled):not(.disabled):active{
+        background-color: transparent;
+
+        &:hover, &:focus, &:active, &.active, &.focus, &:not(:disabled):not(.disabled):active {
             background-color: #{$value};
             border-color: #{$value};
             color: $dark !important;
@@ -45,51 +48,63 @@ $value in $colors {
         }
     }
 }
+
 .btn {
     &.btn-dark {
         color: $white !important;
         background: $dark !important;
         border: 1px solid $gray-100 !important;
+
         &:hover, &:focus, &:active, &.active, &.focus {
             background-color: darken($dark, 5%) !important;
-            color: $white !important; 
+            color: $white !important;
         }
-    }    
+    }
+
     &.btn-soft-dark {
         color: rgba($dark, 0.5) !important;
         border: 1px solid $gray-100 !important;
-        &:hover, &:focus, &:active, &.active, &.focus{
-            color: $white !important; 
+
+        &:hover, &:focus, &:active, &.active, &.focus {
+            color: $white !important;
         }
-    }    
+    }
+
     &.btn-outline-dark {
         border: 1px solid $gray-100 !important;
         color: $dark !important;
-        background-color: transparent;    
+        background-color: transparent;
+
         &:hover, &:focus, &:active, &.active, &.focus {
             background-color: $dark !important;
             color: $white !important;
         }
     }
+
     &.btn-light {
         color: $dark !important;
         border-color: darken($gray-200, 15%) !important;
-        &:hover, &:focus, &:active, &.active, &.focus{
+
+        &:hover, &:focus, &:active, &.active, &.focus {
             background-color: lighten($light, 10%) !important;
             color: $dark !important;
         }
-    }    
+    }
+
     &.btn-soft-light {
         color: rgba($dark, 0.5) !important;
         border: 1px solid darken($gray-200, 15%) !important;
-        &:hover, &:focus, &:active, &.active, &.focus{
-            color: $dark !important; 
+
+        &:hover, &:focus, &:active, &.active, &.focus {
+            color: $dark !important;
         }
-    }    
+    }
+
     &.btn-outline-light {
         border-color: darken($gray-200, 15%) !important;
         color: $dark !important;
-        &:hover, &:focus, &:active, &.active, &.focus{
+
+        &:hover, &:focus, &:active, &.active, &.focus {
             background-color: lighten($light, 10%) !important;
             color: $dark !important;
         }
@@ -99,7 +114,8 @@ $value in $colors {
 button:not(:disabled) {
     outline: none;
 }
-//Shadow 
+
+//Shadow
 .shadow {
     box-shadow: $shadow !important;
 }
@@ -122,20 +138,24 @@ $value in $colors {
         border: 1px solid #{$value} !important;
     }
 }
+
 .badge {
     &.badge-dark {
         color: $white !important;
         background-color: $dark !important;
     }
+
     &.badge-outline-dark {
         color: $dark !important;
         border: 1px solid darken($dark, 20%) !important;
         background-color: transparent !important;
     }
+
     &.badge-light {
         color: $dark !important;
         background-color: $light !important;
     }
+
     &.badge-outline-light {
         border: 1px solid $light !important;
     }
@@ -148,6 +168,7 @@ $value in $colors {
         background-color: lighten($value, 5%);
         color: $dark;
         border-color: $value;
+
         .alert-link {
             color: darken($value, 30%);
         }
@@ -158,12 +179,14 @@ $value in $colors {
         border-color: $value;
     }
 }
+
 .alert {
     &.alert-dark {
         background-color: $dark;
         color: $light;
         border-color: $gray-100;
     }
+
     &.alert-light {
         background-color: $light;
         color: $dark;
@@ -178,37 +201,44 @@ $value in $colors {
         a {
             color: $dark;
         }
+
         &:after {
-            color: $dark; 
-        }     
+            color: $dark;
+        }
     }
 }
 
 //Pagination
-.pagination {   
+.pagination {
     .page-item {
         .page-link {
             color: $dark;
             border: 1px solid $gray-800;
-            background: $white; 
+            background: $white;
+
             &:hover {
                 color: $dark !important;
             }
         }
-    }              
+    }
+
     .active a {
         color: $dark;
     }
 }
+
 //Accordion
 .accordion {
     .accordion-item {
         box-shadow: $shadow;
+
         .accordion-button {
             text-align: right !important;
+
             &.collapsed {
                 background-color: $white;
                 color: $dark !important;
+
                 &:before {
                     color: $dark !important;
                 }
@@ -220,20 +250,26 @@ $value in $colors {
 //Nav
 .nav-pills {
     background: lighten($white, 10%);
-    .nav-link{
+
+    .nav-link {
         color: $dark !important;
+
         &.nav-link-alt {
             color: $dark !important;
+
             &:hover {
                 background: none !important;
             }
+
             &.active {
                 background: $white !important;
             }
         }
+
         &:hover {
             background: lighten($white, 8%);
         }
+
         &.active {
             color: $dark !important;
         }
@@ -261,15 +297,18 @@ $value in $colors {
         }
     }
 }
+
 //Form
 .form-control {
     background: $white;
     border: 1px solid $gray-800;
     color: $gray-300 !important;
+
     &:focus {
         background: $white;
     }
-    &::placeholder{
+
+    &::placeholder {
         color: $gray-300;
     }
 }
@@ -283,7 +322,8 @@ $value in $colors {
 .subcribe-form {
     input {
         background-color: rgba($white, 0.8);
-        &::placeholder{
+
+        &::placeholder {
             color: $gray-300;
         }
     }
@@ -293,14 +333,17 @@ $value in $colors {
 .table-responsive {
     .table {
         color: $dark;
+
         td,
         th {
             border-top-color: $gray-800;
         }
+
         thead th {
             border-bottom-color: $gray-800;
         }
-    } 
+    }
+
     .table-center {
         tbody {
             tr {
@@ -312,6 +355,7 @@ $value in $colors {
         }
     }
 }
+
 .table {
     border-color: $gray-800;
 }
@@ -324,6 +368,7 @@ $value in $colors {
 //Modal
 .modal-content {
     background: $white;
+
     .modal-header {
         button {
             &.close {
@@ -331,11 +376,13 @@ $value in $colors {
             }
         }
     }
+
     .modal-header,
     .modal-footer {
         border-color: $gray-800;
     }
 }
+
 .modal-open {
     padding-right: 0 !important;
 }
@@ -352,12 +399,14 @@ $value in $colors {
         a {
             color: $gray-300;
             border: 1px solid $gray-300;
+
             &:hover {
                 color: $dark !important;
             }
         }
     }
 }
+
 .social-icon {
     &.foot-social-icon {
         li {
@@ -367,11 +416,13 @@ $value in $colors {
             }
         }
     }
+
     &.social {
         li {
             a {
                 color: $muted;
                 border: 1px solid $muted;
+
                 &:hover {
                     color: $dark !important;
                 }
@@ -391,6 +442,7 @@ $value in $colors {
     .overlay {
         background: $white !important;
     }
+
     .author {
         .user,
         .date {
@@ -398,6 +450,7 @@ $value in $colors {
         }
     }
 }
+
 .media-list {
     .sub-comment {
         border-left: 2px dashed $gray-100;
@@ -410,18 +463,21 @@ $value in $colors {
             input[type="text"] {
                 background: $white !important;
             }
+
             ::placeholder {
                 color: $gray-300;
             }
         }
     }
+
     .blog-categories {
         li {
             a {
                 color: $gray-300 !important;
             }
         }
-    }  
+    }
+
     .post-recent {
         .post-recent-content {
             a {
@@ -435,11 +491,13 @@ $value in $colors {
     > a {
         background: $light !important;
         color: $gray-300 !important;
+
         &:hover {
             color: $dark !important;
         }
     }
 }
+
 //countdown
 #countdown, #eventdown {
     .count-down {
@@ -490,7 +548,7 @@ $value in $colors {
             box-shadow: $shadow;
         }
     }
-    
+
     &.chat-person {
         .chat-msg {
             .msg {
@@ -515,45 +573,54 @@ $value in $colors {
 .footer {
     background: $footer;
     color: $gray-300;
+
     .logo-footer {
         color: $dark;
     }
+
     .footer-head {
         color: $dark !important;
     }
+
     .foot-subscribe {
         .form-control {
             background-color: lighten($footer, 2%);
             border: 1px solid lighten($footer, 2%);
             color: $light;
         }
+
         &.foot-white {
             .form-control {
                 color: $gray-300;
             }
         }
-        input{
-            &::placeholder{
+
+        input {
+            &::placeholder {
                 color: $gray-300;
             }
         }
-    } 
+    }
+
     .text-foot {
         color: $gray-300;
     }
+
     .footer-list {
         li {
             a {
                 &:hover {
                     color: lighten($gray-300, 20%);
                 }
-            }         
+            }
         }
-    }    
+    }
+
     .footer-bar,
     .footer-border {
         border-top: 1px solid lighten($footer, 5%);
-    }    
+    }
+
     .border {
         border-color: lighten($footer, 5%) !important;
     }
@@ -562,6 +629,7 @@ $value in $colors {
     &.footer-light {
         background: $light;
         color: $muted;
+
         .footer-head {
             color: $dark;
         }
@@ -572,13 +640,15 @@ $value in $colors {
                 border: 1px solid $gray-200;
                 color: $light;
             }
+
             &.foot-white {
                 .form-control {
                     color: $gray-500;
                 }
             }
-            input{
-                &::placeholder{
+
+            input {
+                &::placeholder {
                     color: $gray-500;
                 }
             }
@@ -587,16 +657,18 @@ $value in $colors {
         .border {
             border-color: lighten($footer, 5%) !important;
         }
+
         .text-foot {
             color: $muted;
         }
+
         .footer-list {
             li {
-                a{
+                a {
                     &:hover {
                         color: $gray-400;
                     }
-                }   
+                }
             }
         }
     }
@@ -609,6 +681,7 @@ $value in $colors {
     position: relative;
     background-position: center center;
 }
+
 //Agency
 .agency-wrapper {
     &:before {
@@ -616,13 +689,15 @@ $value in $colors {
     }
 }
 
-.flex-control-paging li a{
+.flex-control-paging li a {
     background: $white;
 }
+
 .bg-animation-left {
     &:after {
         background: rgba($white, 0.85) !important;
     }
+
     &.dark-left {
         &:after {
             background: rgba($white, 0.6) !important;
@@ -630,9 +705,10 @@ $value in $colors {
     }
 }
 
-//Price 
+//Price
 .pricing-rates {
     border-bottom: 3px solid $gray-500;
+
     &.business-rate {
         &:hover {
             background-color: $white !important;
@@ -643,28 +719,35 @@ $value in $colors {
 //Price
 .calculator-block {
     background-color: $white;
+
     .cryptonatorwidget {
         background: $light !important;
+
         input,
         select {
-            background-color:$light !important;
+            background-color: $light !important;
             box-shadow: $shadow;
             color: $gray-300;
         }
     }
+
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         color: $gray-300;
     }
+
     ::-moz-placeholder { /* Firefox 19+ */
         color: $gray-300;
     }
+
     :-ms-input-placeholder { /* IE 10+ */
         color: $gray-300;
     }
+
     :-moz-placeholder { /* Firefox 18- */
         color: $gray-300;
     }
 }
+
 //Apexcharts
 .apexcharts-tooltip {
     background: $white !important;
@@ -677,7 +760,7 @@ $value in $colors {
         img {
             box-shadow: $shadow;
         }
-    }   
+    }
 }
 
 //Testi
@@ -698,6 +781,7 @@ $value in $colors {
         background: $dark;
         color: $white;
         box-shadow: $shadow-lg;
+
         &:hover {
             color: $dark;
         }
@@ -710,6 +794,7 @@ $value in $colors {
         background-color: $dark;
     }
 }
+
 //Event (index-event.html)
 .event-schedule {
     .date {
@@ -717,6 +802,7 @@ $value in $colors {
             border: 2px solid $white;
         }
     }
+
     &:hover {
         box-shadow: $shadow;
         background: $light !important;
@@ -741,17 +827,18 @@ $value in $colors {
 .main-icon {
     border: 2px solid $gray-800;
 }
+
 .timeline-page {
     &:after {
         background-color: $gray-200 !important;
     }
 }
 
-// Responsive 
-@media (min-width: 769px){    
-    //studio 
+// Responsive
+@media (min-width: 769px) {
+    //studio
     .bg-studio {
-        &:after{
+        &:after {
             background: $white none repeat scroll 0 0;
         }
     }

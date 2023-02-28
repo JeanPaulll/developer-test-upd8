@@ -9,15 +9,18 @@
 #topnav {
     .logo {
         color: $dark !important;
+
         .l-dark,
         .logo-light-mode {
             display: none !important;
         }
+
         .l-light,
         .logo-dark-mode {
             display: inline-block !important;
         }
     }
+
     .has-submenu {
         &.active {
             a {
@@ -25,7 +28,8 @@
             }
         }
     }
-    .has-submenu{
+
+    .has-submenu {
         .submenu {
             .submenu-arrow {
                 border: solid $dark;
@@ -33,17 +37,19 @@
             }
         }
     }
+
     .navbar-toggle {
         span {
             background-color: $dark;
         }
     }
-    
+
     .navigation-menu {
         > li {
             > a {
                 color: $dark;
             }
+
             .submenu {
                 &.megamenu {
                     li {
@@ -54,6 +60,7 @@
                 }
             }
         }
+
         .has-submenu {
             .menu-arrow {
                 border: solid $dark;
@@ -61,26 +68,28 @@
             }
         }
     }
-    
+
     &.scroll {
         background-color: $white;
         box-shadow: $shadow;
+
         .navigation-menu {
             > li {
                 > a {
                     color: $dark;
                 }
-                
+
                 > .menu-arrow {
                     border-color: $dark;
                 }
-            } 
+            }
         }
     }
 
-    &.nav-sticky{
+    &.nav-sticky {
         background: $white;
         box-shadow: $shadow;
+
         .navigation-menu {
             &.nav-light {
                 > li {
@@ -88,6 +97,7 @@
                         color: $dark;
                     }
                 }
+
                 .has-submenu {
                     .menu-arrow {
                         border-color: $dark;
@@ -95,6 +105,7 @@
                 }
             }
         }
+
         .logo {
             &.logo-light {
                 color: $dark !important;
@@ -110,6 +121,7 @@
                 .submenu {
                     background-color: $white;
                     box-shadow: $shadow;
+
                     li {
                         a {
                             color: $dark !important;
@@ -117,14 +129,15 @@
                     }
                 }
             }
-        } 
+        }
     }
 }
-  
+
 @media (max-width: 991px) {
     #topnav {
         background-color: $white;
         box-shadow: $shadow;
+
         .navigation-menu {
             > li {
                 .submenu {
@@ -133,6 +146,7 @@
                             color: $dark !important;
                         }
                     }
+
                     &.megamenu {
                         > li {
                             > ul {
@@ -145,25 +159,27 @@
                         }
                     }
                 }
+
                 > a {
                     color: $dark;
                 }
             }
         }
+
         .menu-extras .menu-item {
             border-color: $muted;
         }
     }
 
     #navigation {
-        border-top: 1px solid darken($light,2%);
-        border-bottom: 1px solid darken($light,2%);
+        border-top: 1px solid darken($light, 2%);
+        border-bottom: 1px solid darken($light, 2%);
         background-color: $white;
     }
 }
 
-//Sidebar-nav 
-.sidebar-nav{
+//Sidebar-nav
+.sidebar-nav {
     > .navbar-item {
         .navbar-link {
             color: $muted !important;

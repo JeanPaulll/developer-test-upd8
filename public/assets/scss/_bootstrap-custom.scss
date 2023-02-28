@@ -84,18 +84,22 @@ video {
 .rounded {
     border-radius: 6px !important;
 }
+
 .rounded-top {
     border-top-left-radius: 6px !important;
     border-top-right-radius: 6px !important;
 }
+
 .rounded-left {
     border-top-left-radius: 6px !important;
     border-bottom-left-radius: 6px !important;
 }
+
 .rounded-bottom {
     border-bottom-left-radius: 6px !important;
     border-bottom-right-radius: 6px !important;
 }
+
 .rounded-right {
     border-top-right-radius: 6px !important;
     border-bottom-right-radius: 6px !important;
@@ -104,6 +108,7 @@ video {
 .rounded-md {
     border-radius: 10px !important;
 }
+
 .rounded-lg {
     border-radius: 30px !important;
 }
@@ -119,17 +124,21 @@ $value in $colors {
 .border {
     border: 1px solid $gray-200 !important;
 }
+
 .border-top {
-    border-top: 1px solid $gray-200!important;
+    border-top: 1px solid $gray-200 !important;
 }
+
 .border-bottom {
-    border-bottom: 1px solid $gray-200 !important;    
+    border-bottom: 1px solid $gray-200 !important;
 }
+
 .border-left {
-    border-left: 1px solid $gray-200 !important;    
+    border-left: 1px solid $gray-200 !important;
 }
+
 .border-right {
-    border-right: 1px solid $gray-200 !important;    
+    border-right: 1px solid $gray-200 !important;
 }
 
 // Opacity
@@ -195,17 +204,21 @@ $value in $colors {
         .dark-version {
             display: none;
         }
+
         .light-version {
             display: inline-block;
         }
+
         .btn-close {
             color: $dark;
             background: none;
+
             &:focus {
                 box-shadow: none;
             }
         }
     }
+
     &.offcanvas-end {
         width: 350px;
     }

@@ -20,18 +20,18 @@
  *     07.  Gallery filter js    * (For Portfolio pages)
  *     08.  Tobii lightbox       * (For Portfolio pages)
  *     09.  CK Editor            * (For Compose mail)
- *     10.  Fade Animation       * 
- *     11.  Typed Text animation (animation) * 
- *     12.  Validation Form      * 
- *     13.  Switcher Pricing Plan* 
+ *     10.  Fade Animation       *
+ *     11.  Typed Text animation (animation) *
+ *     12.  Validation Form      *
+ *     13.  Switcher Pricing Plan*
  *     14.  Cookies Policy       *
  ================================*/
-         
+
 //=========================================//
 /*            01) Tiny slider              */
 //=========================================//
 
-if(document.getElementsByClassName('tiny-single-item').length > 0) {
+if (document.getElementsByClassName('tiny-single-item').length > 0) {
     var slider = tns({
         container: '.tiny-single-item',
         items: 1,
@@ -46,9 +46,10 @@ if(document.getElementsByClassName('tiny-single-item').length > 0) {
         speed: 400,
         gutter: 16,
     });
-};
+}
+;
 
-if(document.getElementsByClassName('tiny-two-item').length > 0) {
+if (document.getElementsByClassName('tiny-two-item').length > 0) {
     var slider = tns({
         container: '.tiny-two-item',
         controls: false,
@@ -75,9 +76,10 @@ if(document.getElementsByClassName('tiny-two-item').length > 0) {
             },
         },
     });
-};
+}
+;
 
-if(document.getElementsByClassName('tiny-three-item').length > 0) {
+if (document.getElementsByClassName('tiny-three-item').length > 0) {
     var slider = tns({
         container: '.tiny-three-item',
         controls: false,
@@ -104,9 +106,10 @@ if(document.getElementsByClassName('tiny-three-item').length > 0) {
             },
         },
     });
-};
+}
+;
 
-if(document.getElementsByClassName('tiny-four-item').length > 0) {
+if (document.getElementsByClassName('tiny-four-item').length > 0) {
     var slider = tns({
         container: '.tiny-four-item',
         controls: false,
@@ -133,11 +136,11 @@ if(document.getElementsByClassName('tiny-four-item').length > 0) {
             },
         },
     });
-};
+}
+;
 
 
-
-if(document.getElementsByClassName('roadmaps').length > 0) {
+if (document.getElementsByClassName('roadmaps').length > 0) {
     var slider = tns({
         container: '.roadmaps',
         controls: false,
@@ -164,9 +167,10 @@ if(document.getElementsByClassName('roadmaps').length > 0) {
             },
         },
     });
-};
+}
+;
 
-if(document.getElementsByClassName('tiny-six-item').length > 0) {
+if (document.getElementsByClassName('tiny-six-item').length > 0) {
     var slider = tns({
         container: '.tiny-six-item',
         controls: false,
@@ -193,11 +197,11 @@ if(document.getElementsByClassName('tiny-six-item').length > 0) {
             },
         },
     });
-};
+}
+;
 
 
-
-if(document.getElementsByClassName('tiny-twelve-item').length > 0) {
+if (document.getElementsByClassName('tiny-twelve-item').length > 0) {
     var slider = tns({
         container: '.tiny-twelve-item',
         controls: true,
@@ -230,7 +234,8 @@ if(document.getElementsByClassName('tiny-twelve-item').length > 0) {
             },
         },
     });
-};
+}
+;
 
 //=========================================//
 /*            02) Swiper slider            */
@@ -297,7 +302,7 @@ try {
     let data = document.querySelectorAll(".slide-bg-image")
     data.forEach((e) => {
         e.style.backgroundImage =
-        `url(${e.getAttribute('data-background')})`;
+            `url(${e.getAttribute('data-background')})`;
     })
 } catch (err) {
 
@@ -308,7 +313,7 @@ try {
 //=========================================//
 
 try {
-    if(document.getElementById("days")){
+    if (document.getElementById("days")) {
         // The data/time we want to countdown to
         var eventCountDown = new Date("December 25, 2022 16:37:52").getTime();
 
@@ -351,8 +356,9 @@ try {
 //=========================================//
 
 try {
-    if(document.getElementById("maintenance")){
+    if (document.getElementById("maintenance")) {
         var seconds = 3599;
+
         function secondPassed() {
             var minutes = Math.round((seconds - 30) / 60);
             var remainingSeconds = seconds % 60;
@@ -367,6 +373,7 @@ try {
                 seconds--;
             }
         }
+
         var countdownTimer = setInterval('secondPassed()', 1000);
     }
 } catch (err) {
@@ -416,8 +423,8 @@ try {
 //=========================================//
 
 try {
-    const start = datepicker('.start', { id: 1 })
-    const end = datepicker('.end', { id: 1 })
+    const start = datepicker('.start', {id: 1})
+    const end = datepicker('.end', {id: 1})
 } catch (err) {
 
 }
@@ -432,7 +439,7 @@ try {
 
     class Demo {
         constructor(element) {
-            if(element){
+            if (element) {
                 this.element = element;
                 this.shuffle = new Shuffle(element, {
                     itemSelector: '.picture-item',
@@ -492,7 +499,7 @@ try {
         }
 
         _removeActiveClassFromChildren(parent) {
-            const { children } = parent;
+            const {children} = parent;
             for (let i = children.length - 1; i >= 0; i--) {
                 children[i].classList.remove('active');
             }
@@ -524,11 +531,11 @@ try {
 
 try {
     ClassicEditor
-    .create(document.querySelector('#editor'))
-    .catch(error => {
-        console.error(error);
-    });
-} catch(err) {
+        .create(document.querySelector('#editor'))
+        .catch(error => {
+            console.error(error);
+        });
+} catch (err) {
 
 }
 
@@ -573,7 +580,9 @@ try {
         this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
         var that = this;
         var delta = 200 - Math.random() * 100;
-        if (this.isDeleting) { delta /= 2; }
+        if (this.isDeleting) {
+            delta /= 2;
+        }
         if (!this.isDeleting && this.txt === fullTxt) {
             delta = this.period;
             this.isDeleting = true;
@@ -590,8 +599,7 @@ try {
     function typewrite() {
         if (toRotate === 'undefined') {
             changeText()
-        }
-        else
+        } else
             var elements = document.getElementsByClassName('typewrite');
         for (var i = 0; i < elements.length; i++) {
             var toRotate = elements[i].getAttribute('data-type');
@@ -607,7 +615,7 @@ try {
         document.body.appendChild(css);
     };
     window.onload(typewrite());
-} catch(err) {
+} catch (err) {
 
 }
 
@@ -619,22 +627,22 @@ try {
 (function () {
     'use strict'
 
-    if(document.getElementsByClassName('needs-validation').length > 0) {
+    if (document.getElementsByClassName('needs-validation').length > 0) {
         // Fetch all the forms we want to apply custom Bootstrap validation styles to
         var forms = document.querySelectorAll('.needs-validation')
 
         // Loop over them and prevent submission
         Array.prototype.slice.call(forms)
             .forEach(function (form) {
-            form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
-                }
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
 
-                form.classList.add('was-validated')
-            }, false)
-        })
+                    form.classList.add('was-validated')
+                }, false)
+            })
     }
 })()
 
@@ -649,7 +657,7 @@ try {
         m = document.getElementById("monthly"),
         y = document.getElementById("yearly");
 
-    e.addEventListener("click", function(){
+    e.addEventListener("click", function () {
         t.checked = false;
         e.classList.add("toggler--is-active");
         d.classList.remove("toggler--is-active");
@@ -657,7 +665,7 @@ try {
         y.classList.add("hide");
     });
 
-    d.addEventListener("click", function(){
+    d.addEventListener("click", function () {
         t.checked = true;
         d.classList.add("toggler--is-active");
         e.classList.remove("toggler--is-active");
@@ -665,13 +673,13 @@ try {
         y.classList.remove("hide");
     });
 
-    t.addEventListener("click", function(){
+    t.addEventListener("click", function () {
         d.classList.toggle("toggler--is-active");
         e.classList.toggle("toggler--is-active");
         m.classList.toggle("hide");
         y.classList.toggle("hide");
     })
-} catch(err) {
+} catch (err) {
 
 }
 
@@ -681,12 +689,21 @@ try {
 
 try {
     /* common fuctions */
-    function el(selector) { return document.querySelector(selector) }
-    function els(selector) { return document.querySelectorAll(selector) }
-    function on(selector, event, action) { els(selector).forEach(e => e.addEventListener(event, action)) }
-    function cookie(name) { 
-        let c = document.cookie.split('; ').find(cookie => cookie && cookie.startsWith(name+'='))
-        return c ? c.split('=')[1] : false; 
+    function el(selector) {
+        return document.querySelector(selector)
+    }
+
+    function els(selector) {
+        return document.querySelectorAll(selector)
+    }
+
+    function on(selector, event, action) {
+        els(selector).forEach(e => e.addEventListener(event, action))
+    }
+
+    function cookie(name) {
+        let c = document.cookie.split('; ').find(cookie => cookie && cookie.startsWith(name + '='))
+        return c ? c.split('=')[1] : false;
     }
 
     /* popup button hanler */
@@ -700,5 +717,5 @@ try {
         el('.cookie-popup').classList.add('cookie-popup-not-accepted');
     }
 } catch (error) {
-    
+
 }

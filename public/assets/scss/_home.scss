@@ -12,25 +12,30 @@
     position: relative;
     background-position: center center;
 }
+
 .bg-home {
-    height: 100vh;    
+    height: 100vh;
     @include home-common();
 }
+
 .bg-home-75vh {
-    height: 75vh !important;    
+    height: 75vh !important;
     @include home-common();
     @media (max-width: 767px) {
         height: 80vh !important;
     }
 }
+
 .bg-half-260 {
-    padding: 260px 0;    
+    padding: 260px 0;
     @include home-common();
 }
+
 .bg-half-170 {
-    padding: 170px 0;    
+    padding: 170px 0;
     @include home-common();
 }
+
 .bg-half {
     padding: 200px 0 100px;
 
@@ -47,18 +52,19 @@
 
 //Gradient Home
 .bg-circle-gradiant {
-    background: radial-gradient(circle at 50% 50%, rgba($primary, 0.1) 0%, 
-                                                   rgba($primary, 0.1) 33.333%,
-                                                   rgba($primary, 0.2) 33.333%, 
-                                                   rgba($primary, 0.2) 66.666%,
-                                                   rgba($primary, 0.3) 66.666%, 
-                                                   rgba($primary, 0.3) 99.999%);
+    background: radial-gradient(circle at 50% 50%, rgba($primary, 0.1) 0%,
+        rgba($primary, 0.1) 33.333%,
+        rgba($primary, 0.2) 33.333%,
+        rgba($primary, 0.2) 66.666%,
+        rgba($primary, 0.3) 66.666%,
+        rgba($primary, 0.3) 99.999%);
 }
 
 //It Solutions
 .it-home {
     animation: slideleft 20000s infinite linear;
 }
+
 @keyframes slideleft {
     from {
         background-position: 0%;
@@ -67,6 +73,7 @@
         background-position: 90000%;
     }
 }
+
 //Saas
 .home-dashboard {
     img {
@@ -74,9 +81,9 @@
         top: 60px;
         z-index: 1;
     }
-    
+
     //Index-onepage.html
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
         &.onepage-hero {
             overflow: hidden;
         }
@@ -90,12 +97,12 @@
         width: 75rem;
         height: 55rem;
         border-radius: 20rem;
-        @media (max-width: 767px) {    
+        @media (max-width: 767px) {
             left: 10rem;
             width: 30rem;
             height: 30rem;
             border-radius: 10rem;
-        } 
+        }
     }
 }
 
@@ -105,8 +112,8 @@
         @media (max-width: 768px) {
             max-width: 550px;
         }
-        
-        @media (max-width: 767px) {    
+
+        @media (max-width: 767px) {
             max-width: 100%;
             height: auto;
         }
@@ -118,11 +125,11 @@
     &:after {
         opacity: 0.9;
         transform: rotate(130deg);
-        
-        @media (max-width: 767px) {    
+
+        @media (max-width: 767px) {
             bottom: -5rem !important;
             height: 30rem;
-        } 
+        }
     }
 }
 
@@ -134,14 +141,14 @@
         width: 100rem;
         height: 70rem;
         border-radius: 6rem;
-        @media (max-width: 768px) {    
+        @media (max-width: 768px) {
             bottom: -10rem;
         }
-        @media (max-width: 767px) {    
+        @media (max-width: 767px) {
             left: 15rem;
             width: 40rem;
             height: 30rem;
-        } 
+        }
     }
 }
 
@@ -170,11 +177,11 @@
         transform: rotate(45deg);
         background-color: $light;
         z-index: -1;
-        
+
         @media (max-width: 768px) {
             right: 12rem;
         }
-        
+
         @media (max-width: 767px) {
             right: 0;
         }
@@ -198,6 +205,7 @@
         border-radius: 30px;
         border: 1px solid $gray-400;
     }
+
     .carousel-control-next-icon,
     .carousel-control-prev-icon {
         width: 30%;
@@ -222,6 +230,7 @@
         background: $primary !important;
         margin: auto 4px;
     }
+
     .active {
         background-color: $primary !important;
         transform: rotate(45deg);
@@ -238,28 +247,31 @@
         height: 100%;
         background: rgba($white, 0.85);
         clip-path: polygon(0 0, 90% 0, 70% 100%, 0% 100%);
-        
+
         @media (max-width: 767px) {
             width: 100%;
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         }
     }
+
     &.dark-left {
         &:after {
             background: rgba($dark, 0.6);
         }
     }
+
     &.crypto-home {
         &:after {
             background: $primary;
-            width:80%;
+            width: 80%;
             clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
         }
     }
+
     &.task-management-home {
         &:after {
             background: url("../images/task/bg.png") $primary;
-            width:100%;
+            width: 100%;
             clip-path: circle(65% at 40% 25%);
         }
     }
@@ -284,6 +296,7 @@
             opacity: 0.9;
         }
     }
+
     .app-images {
         position: absolute;
         bottom: 60px;
@@ -291,7 +304,7 @@
     }
 }
 
-.classic-app-image .bg-app-shape, 
+.classic-app-image .bg-app-shape,
 .classic-saas-image .bg-saas-shape,
 .freelance-hero .bg-shape {
     &:after {
@@ -300,8 +313,9 @@
         z-index: -1;
     }
 }
-.classic-app-image .bg-app-shape, 
-.classic-saas-image .bg-saas-shape{
+
+.classic-app-image .bg-app-shape,
+.classic-saas-image .bg-saas-shape {
     &:after {
         box-shadow: 0 0 40px rgba($primary, 0.5);
         background-color: $primary;
@@ -330,7 +344,8 @@
         width: 100%;
         height: 100%;
     }
-    .swiper-container {        
+
+    .swiper-container {
         .swiper-button-prev,
         .swiper-button-next {
             background: transparent;
@@ -338,53 +353,63 @@
             height: 35px;
             line-height: 35px;
             margin-top: -30px;
+
             &:before {
                 font-family: "Material Design Icons";
                 font-weight: 900;
                 color: $white;
             }
+
             &:hover {
                 background: $primary;
                 border-color: $primary !important;
             }
         }
+
         .swiper-button-prev {
             left: 10px;
+
             &:before {
                 content: "\f0141";
             }
         }
+
         .swiper-button-next {
             right: 10px;
+
             &:before {
                 content: "\f0142";
             }
         }
     }
+
     .swiper-pagination-bullet {
         color: $gray-100;
         background: transparent;
     }
+
     .swiper-pagination-bullet-active {
         color: $white;
     }
-    .swiper-container-horizontal 
+
+    .swiper-container-horizontal
     > .swiper-pagination-bullets,
-    .swiper-pagination-custom, 
+    .swiper-pagination-custom,
     .swiper-pagination-fraction {
         bottom: 45px;
-    } 
-    .swiper-container-horizontal 
+    }
+
+    .swiper-container-horizontal
     > .swiper-pagination-bullets .swiper-pagination-bullet {
         margin: 0 13px;
     }
 }
 
-// Responsive 
-@media (min-width: 769px){    
-    //studio 
+// Responsive
+@media (min-width: 769px) {
+    //studio
     .bg-studio {
-        &:after{
+        &:after {
             content: "";
             position: absolute;
             right: 0px;
@@ -398,8 +423,8 @@
 }
 
 @media (max-width: 767px) {
-    .bg-home, .bg-half-170, .bg-half-260, .bg-marketing, .swiper-slider-hero .swiper-container .swiper-slide {        
+    .bg-home, .bg-half-170, .bg-half-260, .bg-marketing, .swiper-slider-hero .swiper-container .swiper-slide {
         padding: 150px 0;
         height: auto;
-    } 
+    }
 }

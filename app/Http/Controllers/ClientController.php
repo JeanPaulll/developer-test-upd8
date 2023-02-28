@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreClientRequest;
-use App\Http\Requests\UpdateClientRequest;
 use App\Models\City;
 use App\Models\Client;
 use App\Models\State;
@@ -34,15 +33,6 @@ class ClientController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        $states = State::all();
-        return view('register', compact('states'));
-    }
-
-    /**
      * Store a newly created resource in storage.
      */
     public function store(StoreClientRequest $request)
@@ -68,7 +58,7 @@ class ClientController extends Controller
             'state_id' => 'required',
             'city_id' => 'required',
         ], $msg);
-        $data =  $request->post();
+        $data = $request->post();
         $data['name'] = $this->ucfirst($request->post()['name']);
         if ($request->post()['name']) {
             session()->put('success', "Cliente {$this->ucfirst($request->post()['name'])}, foi cadastrado com sucesso.");
@@ -77,28 +67,24 @@ class ClientController extends Controller
         return Redirect::to('/');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Client $client)
+    public function ucfirst($str)
     {
-        //
+        $str = mb_strtolower($str);
+        $words = preg_split('/\b/u', $str, -1, PREG_SPLIT_NO_EMPTY);
+        foreach ($words as $word) {
+            $ucword = mb_strtoupper(mb_substr($word, 0, 1)) . mb_substr($word, 1);
+            $str = str_replace($word, $ucword, $str);
+        }
+        return $str;
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for creating a new resource.
      */
-    public function edit(Client $client)
+    public function create()
     {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(UpdateClientRequest $request, Client $client)
-    {
-      //
+        $states = State::all();
+        return view('register', compact('states'));
     }
 
     /**
@@ -115,16 +101,5 @@ class ClientController extends Controller
     {
         $cities = City::where('state_id', $request->state_id)->get();
         return response()->json($cities);
-    }
-
-    public function ucfirst($str)
-    {
-        $str = mb_strtolower($str);
-        $words = preg_split('/\b/u', $str, -1, PREG_SPLIT_NO_EMPTY);
-        foreach ($words as $word) {
-            $ucword = mb_strtoupper(mb_substr($word, 0, 1)) . mb_substr($word, 1);
-            $str = str_replace($word, $ucword, $str);
-        }
-        return $str;
     }
 }

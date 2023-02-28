@@ -11,9 +11,11 @@
     z-index: 1;
     border-bottom: 3px solid $gray-500 !important;
     transition: all 0.5s ease;
+
     .price {
         font-weight: 400;
     }
+
     &.business-rate {
         &:hover {
             transform: scale(1.03);
@@ -21,6 +23,7 @@
             border-color: $primary !important;
             box-shadow: $shadow-md !important;
             background-color: $white !important;
+
             .title {
                 color: $primary;
             }
@@ -31,7 +34,7 @@
         transform: scale(1.05);
         z-index: 2;
         border-color: $primary !important;
-        
+
         @media (max-width: 767px) {
             transform: scale(1);
         }
@@ -50,11 +53,12 @@
         &.ribbon-#{$name} {
             span {
                 background-color: #{$value} !important;
+
                 &:before {
                     border-left-color: darken($value, 10%);
                     border-top-color: darken($value, 10%);
                 }
-        
+
                 &:after {
                     border-right-color: darken($value, 10%);
                     border-top-color: darken($value, 10%);
@@ -70,25 +74,31 @@
     width: 75px;
     height: 75px;
     z-index: 2;
+
     &.ribbon-right {
         right: -5px;
+
         span {
             right: -23px;
             transform: rotate(45deg);
         }
     }
+
     &.ribbon-left {
         left: -5px;
+
         span {
             left: -21px;
             transform: rotate(-45deg);
         }
     }
+
     span {
         position: absolute;
         top: 18px;
         width: 100px;
         color: $white;
+
         &:before,
         &:after {
             content: "";
@@ -97,6 +107,7 @@
             z-index: -1;
             border: 3px solid transparent;
         }
+
         &:before {
             left: 0;
         }
@@ -130,10 +141,12 @@
 
 .calculator-block {
     background-color: $white;
+
     .cryptonatorwidget {
         border: none !important;
         padding: 0 !important;
         background: $light !important;
+
         input,
         select {
             height: 40px !important;
@@ -150,22 +163,27 @@
             color: $muted;
             font-family: $font-family-base !important;
         }
-        div:last-child{
+
+        div:last-child {
             display: none;
         }
     }
+
     ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         color: $muted;
         text-transform: capitalize;
     }
+
     ::-moz-placeholder { /* Firefox 19+ */
         color: $muted;
         text-transform: capitalize;
     }
+
     :-ms-input-placeholder { /* IE 10+ */
         color: $muted;
         text-transform: capitalize;
     }
+
     :-moz-placeholder { /* Firefox 18- */
         color: $muted;
         text-transform: capitalize;
@@ -184,12 +202,12 @@
         display: inline-block;
         vertical-align: middle;
     }
-    
+
     .toggler {
         transition: all 0.5s ease;
         font-weight: bold;
     }
-    
+
     .toggler--is-active {
         color: $primary !important;
     }
@@ -203,6 +221,6 @@
     }
 }
 
-.hide{
+.hide {
     display: none;
 }

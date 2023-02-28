@@ -39,7 +39,8 @@
                                     <div>
                                         {{ $message }}
                                         <strong>
-                                            <a href="/customer-list" style="color:#fff"> :: Ir para listagem de clientes ::</a>
+                                            <a href="/customer-list" style="color:#fff"> :: Ir para listagem de clientes
+                                                ::</a>
                                         </strong>
                                     </div>
                                 </div>

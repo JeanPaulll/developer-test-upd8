@@ -5,7 +5,7 @@ function toggleSwitcher() {
         i.style.left = "0px";
     } else {
         i.style.left = "-189px";
-	}
+    }
 };
 
 function setColor(theme) {

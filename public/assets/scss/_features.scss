@@ -9,6 +9,7 @@
     .icon {
         background: rgba($primary, 0.1);
     }
+
     .image {
         &:before {
             content: "";
@@ -22,6 +23,7 @@
             background: linear-gradient(45deg, transparent, rgba($primary, 0.1));
         }
     }
+
     &.feature-clean {
         .icons {
             i {
@@ -31,18 +33,22 @@
                 background-color: rgba($primary, 0.1);
             }
         }
+
         .title {
             &:hover {
                 color: $primary !important;
             }
         }
     }
+
     .ride-image {
         transform: rotate(-45deg);
+
         img {
             border-radius: 100% 100% 100% 0;
         }
     }
+
     &:hover {
         .image {
             &:before {
@@ -51,8 +57,10 @@
             }
         }
     }
+
     &.fea-primary {
         transition: all 0.5s ease;
+
         .big-icon {
             position: absolute;
             top: 50%;
@@ -62,32 +70,39 @@
             opacity: 0.015;
             font-size: 180px;
         }
+
         &:hover {
             box-shadow: $shadow-lg;
             background-color: $primary !important;
             color: $white !important;
-            .icon2, 
+
+            .icon2,
             .para {
                 color: rgba($white, 0.5) !important;
             }
+
             .content,
             .icon2 {
                 z-index: 2;
             }
+
             .big-icon {
                 opacity: 0.05;
             }
+
             .readmore {
                 color: $white !important;
             }
         }
     }
 }
+
 .features,
 .key-feature {
     .title {
         font-size: 18px !important;
     }
+
     .icon {
         height: 45px;
         width: 45px;
@@ -97,9 +112,11 @@
 
 .key-feature {
     transition: all 0.3s ease;
+
     .icon {
         background: linear-gradient(45deg, transparent, rgba($primary, 0.15));
     }
+
     &:hover {
         transform: scale(1.05);
         box-shadow: $shadow-md !important;
@@ -109,14 +126,17 @@
 // Work process
 .work-process {
     transition: all 0.5s ease;
+
     .step, .step-icon {
         opacity: 0.06;
     }
+
     a {
         font-size: 15px;
     }
+
     &.process-arrow {
-        &:after {    
+        &:after {
             content: '';
             position: absolute;
             width: 60%;
@@ -130,13 +150,16 @@
                 display: none;
             }
         }
+
         &:hover {
             transform: none !important;
         }
     }
+
     &:hover {
         transform: translateY(-10px);
     }
+
     &.d-none-arrow {
         &:hover {
             transform: none !important;
@@ -147,6 +170,7 @@
 //course.html
 .course-feature {
     transition: all 0.5s ease;
+
     .full-img {
         position: absolute;
         bottom: 50%;
@@ -159,8 +183,10 @@
         transition: all 0.5s ease;
         font-size: 250px;
     }
+
     &:hover {
         transform: translateY(-10px);
+
         .full-img {
             opacity: 0.05;
         }
@@ -180,7 +206,7 @@
     @media (max-width: 768px) {
         margin: -140px 0 0;
     }
-    
+
     &.blog-search {
         margin: -120px 0 0px;
 
@@ -193,10 +219,12 @@
 //index-job.html
 .categories {
     transition: all 0.5s ease;
+
     &:hover {
         transform: translateY(-10px);
         box-shadow: $shadow;
     }
+
     a {
         &:hover {
             color: $primary !important;
@@ -219,7 +247,7 @@
     &:after {
         left: 10rem;
         transform: rotate(150deg);
-        
+
         @media (max-width: 768px) {
             left: 0;
         }
@@ -256,7 +284,7 @@
         height: 35rem;
         border-radius: 15rem;
         transform: rotate(145deg);
-        
+
         @media (max-width: 767px) {
             bottom: -1rem;
             width: 25rem;
@@ -265,6 +293,7 @@
         }
     }
 }
+
 .saas-feature-shape-left {
     &:after {
         left: -10rem;
@@ -321,6 +350,7 @@
         }
     }
 }
+
 .social-feature-left {
     &:after {
         right: -200px;
@@ -329,6 +359,7 @@
         }
     }
 }
+
 .social-feature-right {
     &:after {
         left: -200px;
@@ -340,14 +371,17 @@
 
 .explore-feature {
     transition: all 0.5s ease;
+
     .icon {
         height: 80px;
         width: 80px;
         line-height: 80px;
         transition: all 0.5s ease;
     }
+
     &:hover {
         box-shadow: $shadow-lg !important;
+
         .icon,
         .title {
             color: $primary !important;

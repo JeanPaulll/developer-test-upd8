@@ -48,7 +48,8 @@
                                                    data-bs-placement="top" title="Editar o item: {{ $client->name }}"
                                                    alt="">
                                                     Editar </a>
-                                                <a onclick="goDestroy('/destroy/{{ $client->id }}')" class="btn btn-danger mb-2" data-bs-toggle="tooltip"
+                                                <a onclick="goDestroy('/destroy/{{ $client->id }}')"
+                                                   class="btn btn-danger mb-2" data-bs-toggle="tooltip"
                                                    data-bs-placement="top" title="Excluir o item: {{ $client->name }}"
                                                    alt="Destroy Client">
                                                     Excluir </a>

@@ -13,10 +13,12 @@
         padding: 60px 0;
     }
 }
+
 .section-two {
     padding: 60px 0;
     position: relative;
 }
+
 .bg-overlay {
     background-color: $overlay;
     position: absolute;
@@ -39,6 +41,7 @@
 //Title
 .title-heading {
     line-height: 26px;
+
     .heading {
         font-size: 45px !important;
         letter-spacing: 1px;
@@ -46,37 +49,43 @@
             font-size: 35px !important;
         }
     }
+
     .para-desc {
         font-size: 18px;
     }
 }
+
 .section-title {
     // position: relative;
     .title {
         letter-spacing: 0.5px;
         font-size: 30px !important;
-        
+
         @media (max-width: 768px) {
             font-size: 24px !important;
         }
     }
-} 
-.text-shadow-title {
-    text-shadow: 2px 0 0 $white, 
-                -2px 0 0 $white, 
-                0 4px 0 rgba($white, 0.4), 
-                0 -2px 0 $white, 
-                1px 1px $white, 
-                -1px -1px 0 $white, 
-                1px -1px 0 $white, 
-                -1px 1px 0 $white;
 }
+
+.text-shadow-title {
+    text-shadow: 2px 0 0 $white,
+    -2px 0 0 $white,
+    0 4px 0 rgba($white, 0.4),
+    0 -2px 0 $white,
+    1px 1px $white,
+    -1px -1px 0 $white,
+    1px -1px 0 $white,
+    -1px 1px 0 $white;
+}
+
 .para-desc {
     max-width: 600px;
 }
+
 .mt-100 {
     margin-top: 100px;
 }
+
 //Shapes
 .shape {
     position: absolute;
@@ -84,7 +93,8 @@
     right: 0;
     bottom: -2px;
     left: 0;
-    &>svg {
+
+    & > svg {
         transform: scale(2);
         width: 100%;
         height: auto;
@@ -104,7 +114,7 @@
             height: 60px;
         }
     }
-    
+
     @media (max-width: 425px) {
         bottom: -4px;
     }
@@ -116,16 +126,19 @@
     position: relative;
     overflow: hidden;
     transform: translate3d(0, 0, 0);
+
     > ul {
         white-space: nowrap;
     }
+
     .move-text {
         animation: moveSlideshow 12s linear infinite;
     }
-}  
+}
+
 @keyframes moveSlideshow {
-    100% { 
-        transform: translateX(-45%);  
+    100% {
+        transform: translateX(-45%);
     }
 }
 
@@ -133,6 +146,7 @@
 .mover {
     animation: mover 1s infinite alternate;
 }
+
 @keyframes mover {
     0% {
         transform: translateY(0);
@@ -163,10 +177,10 @@
 
 @keyframes spinner-animation {
     from {
-        transform:rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-        transform:rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
@@ -174,6 +188,7 @@
 .seo-hero-widget {
     position: relative;
     transition: all 0.5s ease;
+
     &:hover {
         transform: scale(1.05);
         z-index: 9;
@@ -192,7 +207,7 @@
     z-index: 1;
 
     @media (min-width: 769px) and (max-width: 1024px) {
-        right: -20rem;        
+        right: -20rem;
     }
 
     @media (min-width: 426px) and (max-width: 768px) {
@@ -215,6 +230,7 @@
     margin: 0 auto;
     max-width: 512px;
     z-index: 5;
+
     .cookie-popup-actions {
         button {
             border: none;
@@ -227,6 +243,7 @@
             right: 5px;
         }
     }
+
     @media (max-width: 425px) {
         left: 12px;
         right: 12px;
@@ -257,30 +274,33 @@
     font-size: 190px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
     &.clip-text-image {
         background-image: url("../images/logistics/01.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     @media (max-width: 1024px) {
-        font-size: 180px;        
+        font-size: 180px;
     }
     @media (max-width: 768px) {
-        font-size: 135px;        
+        font-size: 135px;
     }
     @media (max-width: 425px) {
-        font-size: 50px;        
+        font-size: 50px;
     }
 }
-  
+
 @media (min-width: 768px) {
     .margin-top-100 {
         margin-top: 100px;
     }
 }
+
 @media (max-width: 768px) {
     .mt-60 {
         margin-top: 60px;
-    }   
+    }
 }

@@ -10,7 +10,8 @@
     .logo {
         float: right;
     }
-    .has-submenu{
+
+    .has-submenu {
         .submenu {
             .submenu-arrow {
                 border-width: 2px 0px 0px 2px;
@@ -24,13 +25,15 @@
         .lines {
             margin: 30px 10px 26px 0 !important;
         }
+
         span {
             height: 2px;
             width: 100%;
             background-color: $dark;
             display: block;
             margin-bottom: 5px;
-            transition: transform .5s ease;   
+            transition: transform .5s ease;
+
             &:last-child {
                 margin-bottom: 0;
             }
@@ -51,13 +54,14 @@
             }
         }
     }
+
     .menu-extras {
         float: left;
     }
 }
 
 .logo {
-    margin-right: auto;    
+    margin-right: auto;
     margin-left: 15px;
 }
 
@@ -68,16 +72,19 @@
                 .submenu {
                     right: 0;
                     left: auto;
+
                     li {
                         ul {
                             padding-right: 0;
                             padding-left: auto;
                         }
                     }
+
                     &.megamenu {
                         right: 50% !important;
                         left: 0;
                         transform: translateX(50%);
+
                         > li {
                             .submenu {
                                 right: 100%;
@@ -85,6 +92,7 @@
                             }
                         }
                     }
+
                     > li {
                         .submenu {
                             right: 101%;
@@ -93,14 +101,17 @@
                         }
                     }
                 }
+
                 &.last-elements {
                     .submenu {
                         right: auto;
                         left: 0;
+
                         &:before {
                             right: auto;
                             left: 35px;
                         }
+
                         > li.has-submenu .submenu {
                             right: auto;
                             left: 100%;
@@ -117,6 +128,7 @@
                         .submenu {
                             left: auto !important;
                             right: 0 !important;
+
                             &:before {
                                 left: auto !important;
                                 right: 11px !important;
@@ -142,6 +154,7 @@
             > li {
                 .submenu {
                     padding-right: 20px;
+
                     &.megamenu {
                         > li {
                             > ul {
@@ -153,7 +166,8 @@
                 }
             }
         }
-        .has-submenu{
+
+        .has-submenu {
             .submenu {
                 .submenu-arrow {
                     left: 20px;
@@ -176,6 +190,7 @@
                     left: 8px;
                     right: auto;
                 }
+
                 .submenu {
                     .submenu-arrow {
                         border-width: 0px 2px 2px 0px;
@@ -186,7 +201,7 @@
     }
 }
 
-@media (max-width: 375px){
+@media (max-width: 375px) {
     #topnav {
         .buy-menu-btn {
             .dropdown {
